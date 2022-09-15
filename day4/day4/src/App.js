@@ -26,17 +26,20 @@ function App() {
               <h5 class="card-title text-uppercase">Twitter</h5>
               <p class="card-text">
                 Lorem Ipsum dolor sit amet consectetur adipisicing alit.
-                Expedita Ultam allquid naon eligendi neme ost neque
-                reiciendis error ?
+                Expedita Ultam allquid naon eligendi neme ost neque reiciendis
+                error ?
               </p>
-              <button type="button" class="btn btn-dark text-uppercase rounded-pill">
+              <button
+                type="button"
+                class="btn btn-dark text-uppercase rounded-pill"
+              >
                 Read More
               </button>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card border border-dark text-center text-light bg-dark insta-bg">
+          <div class="card border border-dark text-center text-light insta-bg">
             <div class="text-center mt-5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -54,10 +57,13 @@ function App() {
               <h5 class="card-title text-uppercase">Instagram</h5>
               <p class="card-text">
                 Lorem Ipsum dolor sit amet consectetur adipisicing alit.
-                Expedita Ultam allquid naon eligendi neme ost neque
-                reiciendis error ?
+                Expedita Ultam allquid naon eligendi neme ost neque reiciendis
+                error ?
               </p>
-              <button type="button" class="btn text-uppercase bg-light rounded-pill">
+              <button
+                type="button"
+                class="btn text-uppercase bg-light rounded-pill"
+              >
                 Read More
               </button>
             </div>
@@ -81,14 +87,36 @@ function App() {
               <h5 class="card-title text-uppercase">Youtube</h5>
               <p class="card-text">
                 Lorem Ipsum dolor sit amet consectetur adipisicing alit.
-                Expedita Ultam allquid naon eligendi neme ost neque
-                reiciendis error ?
+                Expedita Ultam allquid naon eligendi neme ost neque reiciendis
+                error ?
               </p>
-              <button type="button" class="btn btn-dark text-uppercase rounded-pill">
+              <button
+                type="button"
+                class="btn btn-dark text-uppercase rounded-pill"
+              >
                 Read More
               </button>
             </div>
           </div>
+        </div>
+      </div>
+      {/* INPUT CHEKCBOX TASK */}
+      <div class="mt-5 ms-5">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="option1"/>
+          <label class="form-check-label">Apple</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input bg-success" type="checkbox" value="option1" checked />
+          <label class="form-check-label">Strawberry</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="option1"/>
+          <label class="form-check-label">Banana</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input bg-success" type="checkbox" value="option1" checked disabled/>
+          <label class="form-check-label">Cherry</label>
         </div>
       </div>
     </div>
