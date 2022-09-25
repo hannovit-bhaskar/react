@@ -1,0 +1,11 @@
+.counter-btn{
+    font-size: 44px;
+    cursor: pointer;
+    color: #0cd5cc;
+}
+.counter-btn:hover{
+    color: greenyellow;
+}
+.counter{
+    font-size: 44px;
+}
