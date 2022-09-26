@@ -1,0 +1,30 @@
+export const apiData = [
+  {
+    coord: { lon: 77.2167, lat: 28.6667 },
+    weather: [{ id: 701, main: "Mist", description: "mist", icon: "50n" }],
+    base: "stations",
+    main: {
+      temp: 302.2,
+      feels_like: 307.81,
+      temp_min: 302.2,
+      temp_max: 302.2,
+      pressure: 1008,
+      humidity: 79,
+    },
+    visibility: 3000,
+    wind: { speed: 2.06, deg: 300 },
+    clouds: { all: 40 },
+    dt: 1664202329,
+    sys: {
+      type: 1,
+      id: 9165,
+      country: "IN",
+      sunrise: 1664152877,
+      sunset: 1664196233,
+    },
+    timezone: 19800,
+    id: 1273294,
+    name: "Delhi",
+    cod: 200,
+  },
+];

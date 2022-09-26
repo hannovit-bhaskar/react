@@ -29,6 +29,7 @@ export default class Navbar extends Component {
                 <li><a className="dropdown-item" href="/day3" role="button">Day3</a></li>
                 <li><a className="dropdown-item" href="/day4" role="button">Day4</a></li>
                 <li><a className="dropdown-item" href="/day5" role="button">Day5</a></li>
+                <li><a className="dropdown-item" href="/day6" role="button">Day6</a></li>
                 </ul>
             </li>
         </ul>
