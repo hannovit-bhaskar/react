@@ -3,6 +3,7 @@ import {data} from "./data.jsx";
 import Rendertask1 from "./Rendertask1";
 import Rendertask2 from './Rendertask2';
 import Rendertask3 from './Rendertask3.jsx';
+// import {jsonData} from "./apiJson.jsx";
 
 class Day6 extends Component {
     constructor(props){
@@ -53,16 +54,17 @@ class Day6 extends Component {
             this.setState({checkbox_error:"Please select checkbox"});
         }
         if(this.state.email && this.state.password && this.state.checkbox){
-            this.setState({email_error:""});
-            this.setState({password_error:""});
-            this.setState({checkbox_error:""});
             this.setState(()=>{
                 return{
                     email:"",
+                    email_error:"",
                     password:"",
+                    password_error:"",
+                    checkbox:false,
+                    checkbox_error:"",
+                    form_data:[{"key":1,"email":this.state.email,"password":this.state.password}]
                 }
             })
-            this.setState({form_data:[{"key":1,"email":this.state.email,"password":this.state.password}]})
         }
     }
     getWeather = (event) => {
@@ -74,6 +76,7 @@ class Day6 extends Component {
                 this.setState({weatherAPI:[apiData]});
             });
         }
+        // this.setState({weatherAPI:jsonData});
 
     }
     render() {

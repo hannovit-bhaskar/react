@@ -1,5 +1,7 @@
 import React from 'react'
 import "./day6.css"
+import "./app-bg.jpg"
+
 function Rendertask3(props) {
   if(props.task3.is_task3){
       return (
@@ -25,7 +27,7 @@ function Rendertask3(props) {
                   </span>
                   </sub> 
                   <div className="h2">
-                    {item.main["temp"]}
+                    {item.main["temp"]}<sup>o</sup>F
                   </div>  
                   <div>
                     <span className="fw-bold">Description : </span>{item.weather[0]["description"]}

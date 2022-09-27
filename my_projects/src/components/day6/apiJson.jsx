@@ -1,4 +1,4 @@
-export const apiData = [
+export const jsonData = [
   {
     coord: { lon: 77.2167, lat: 28.6667 },
     weather: [{ id: 701, main: "Mist", description: "mist", icon: "50n" }],

@@ -34,7 +34,7 @@ function Rendertask2(props) {
                         <span className="form-label text-danger">{props.task2.password_error}</span>
                     </div>
                     <div className="mb-3 form-check">
-                        <input type="checkbox" name='checkbox' onChange={props.handleChange} value={props.task2.checkbox} className="form-check-input"/>
+                        <input type="checkbox" name='checkbox' onChange={props.handleChange}  checked={props.task2.checkbox} className="form-check-input"/>
                         <label className="form-check-label" htmlFor="exampleCheck1">I agree to terms and conditions</label>
                     </div>
                     <p className="text-danger">{props.task2.checkbox_error}</p>
