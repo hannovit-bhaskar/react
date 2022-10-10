@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Outlet } from 'react-router-dom'
+import { Outlet, Link } from 'react-router-dom'
 import logo from "../logo.svg"
 import "../App.css"
 
@@ -16,20 +16,20 @@ export default class Navbar extends Component {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-            <a className="nav-link active" role="button" aria-current="page" href="/">Home</a>
+            <Link className="nav-link active" role="button" aria-current="page" to="/">Home</Link>
             </li>
             <li className="nav-item">
-            <a className="nav-link" role="button" aria-current="page" href={() => false}>Practices</a>
+            <Link className="nav-link" role="button" aria-current="page" to={null} >Practices</Link>
             </li>
             <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle active" href={() => false} id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <Link className="nav-link dropdown-toggle active" to={null} id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             All Task
-            </a>
+            </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a className="dropdown-item" href="/day3" role="button">Day3</a></li>
-                <li><a className="dropdown-item" href="/day4" role="button">Day4</a></li>
-                <li><a className="dropdown-item" href="/day5" role="button">Day5</a></li>
-                <li><a className="dropdown-item" href="/day6" role="button">Day6</a></li>
+                <li><Link className="dropdown-item" to="/day3" role="button">Day3</Link></li>
+                <li><Link className="dropdown-item" to="/day4" role="button">Day4</Link></li>
+                <li><Link className="dropdown-item" to="/day5" role="button">Day5</Link></li>
+                <li><Link className="dropdown-item" to="/day6" role="button">Day6</Link></li>
                 </ul>
             </li>
         </ul>

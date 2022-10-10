@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Link} from "react-router-dom";
 import image from "./default.jpg"
 export default class Home extends Component {
   render() {
@@ -8,7 +9,7 @@ export default class Home extends Component {
           <div className="row row-cols-1 row-cols-md-3 g-1 my-2">
 
             <div className="col">
-              <a href="/day3">
+              <Link to="/day3">
                 <div className="card mx-1 text-dark">
                   <img src={image} className="card-img-top" alt="hii"/>
                   <div className="card-body">
@@ -17,11 +18,11 @@ export default class Home extends Component {
                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             
             <div className="col">
-              <a href="/day4">
+              <Link to="/day4">
                 <div className="card mx-1 text-dark">
                   <img src={image} className="card-img-top" alt="hii"/>
                   <div className="card-body">
@@ -30,11 +31,11 @@ export default class Home extends Component {
                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             
             <div className="col">
-              <a href="/day5">
+              <Link to="/day5">
                 <div className="card mx-1 text-dark">
                   <img src={image} className="card-img-top" alt="hii"/>
                   <div className="card-body">
@@ -43,11 +44,11 @@ export default class Home extends Component {
                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             
             <div className="col">
-              <a href="/day6">
+              <Link to="/day6">
                 <div className="card mx-1 text-dark">
                   <img src={image} className="card-img-top" alt="hii"/>
                   <div className="card-body">
@@ -56,7 +57,7 @@ export default class Home extends Component {
                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
           </div>

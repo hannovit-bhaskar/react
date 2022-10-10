@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import "./Day4.css"
 export default class Day5 extends Component {
+  constructor(props){
+    super(props);
+    this.state = {apple:false,strawberry:true,banana:false,cherry:true}
+  }
   render() {
     return (
       <>
@@ -102,19 +106,19 @@ export default class Day5 extends Component {
         {/* INPUT CHEKCBOX TASK */}
         <div className="mt-5 ms-5">
         <div className="form-check">
-          <input className="form-check-input" type="checkbox" value="option1"/>
+          {this.state.apple?<input className="form-check-input" type="checkbox" value="option1" checked/>:<input className="form-check-input" type="checkbox" value="option1"/>}
           <label className="form-check-label">Apple</label>
         </div>
         <div className="form-check">
-          <input className="form-check-input bg-success" type="checkbox" value="option1" checked />
+          {this.state.strawberry ? <input className="form-check-input bg-success" type="checkbox" value="option1" checked/>:<input className="form-check-input bg-success" type="checkbox" value="option1" />}
           <label className="form-check-label">Strawberry</label>
         </div>
         <div className="form-check">
-          <input className="form-check-input" type="checkbox" value="option1"/>
+          {this.state.banana?<input className="form-check-input" type="checkbox" value="option1"/>:<input className="form-check-input" type="checkbox" value="option1"/>}
           <label className="form-check-label">Banana</label>
         </div>
         <div className="form-check">
-          <input className="form-check-input bg-success" type="checkbox" value="option1" checked disabled/>
+          {this.state.cherry?<input className="form-check-input bg-success" type="checkbox" value="option1" checked disabled/>:<input className="form-check-input bg-success" type="checkbox" value="option1" disabled/>}
           <label className="form-check-label">Cherry</label>
         </div>
         </div>
